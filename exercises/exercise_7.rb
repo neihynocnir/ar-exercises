@@ -9,4 +9,10 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+# Validations for both models
+puts "store name: "
+store_name = gets.chomp
+
+@store7 = Store.create(name: store_name)
+puts @store7.errors.details
+
